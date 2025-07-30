@@ -24,8 +24,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>
-        {children}
+      <body
+        className={`${geistSans.variable} ${geistMono.variable} w-screen h-screen bg-gradient-to-b from-blue-50 to-red-100 overflow-hidden`}
+      >
+        <div className="px-4 sm:px-4 md:px-12 lg:px-20 xl:px-48 h-full py-10 flex items-center">
+          {children}
+        </div>
       </body>
     </html>
   );
